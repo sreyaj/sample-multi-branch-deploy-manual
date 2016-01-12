@@ -29,3 +29,7 @@ after_success:
   - >
     [[ $BRANCH = 'production' ]] && REMOTE=production || REMOTE=staging
   - git push -f $REMOTE $BRANCH:master
+  notificaions:
+  email:
+   - sreya@shippable.com
+  
